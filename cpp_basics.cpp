@@ -7,7 +7,11 @@ int main() {
 
     cin >> n;
 
-    for (int i=1; i <= n; i++){
+    if (n == 1){
+        cout << "-1";
+    }
+
+    for (int i=2; i <= n; i+=2){
         cout << i << "\n";
     }
 
