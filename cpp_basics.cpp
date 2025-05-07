@@ -3,18 +3,13 @@
 using namespace std;
 
 int main() {
-    ll a, b, c, d;
-    ll r = 1;
+    int n;
 
-    cin >> a >> b >> c >> d;
+    cin >> n;
 
-    r = (r * (a % 100)) % 100;
-    r = (r * (b % 100)) % 100;
-    r = (r * (c % 100)) % 100;
-    r = (r * (d % 100)) % 100; 
-
-    if (r < 10) cout << '0';
-    cout << r;
+    for (int i=1; i <= n; i++){
+        cout << i << "\n";
+    }
 
     return 0;
 }
