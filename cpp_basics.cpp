@@ -3,17 +3,42 @@
 using namespace std;
 
 int main() {
-    int n;
+    // store counters for conditions
+    // loop through all Xi, loop n times
+    // counting conditions are mutually inclusive
+    // formatted output
+
+    int even = 0;
+    int odd = 0;
+    int positive = 0;
+    int negative = 0;
+    int n = 0;
+    int x = 0;
 
     cin >> n;
 
-    if (n == 1){
-        cout << "-1";
+    for (int i = 0; i < n; i++){
+        cin >> x;
+
+        if (x % 2 == 0){
+            even++;
+        } else {
+            odd++;
+        }
+
+        if (x > 0){
+            positive++;
+        } else if (x < 0){
+            negative++;
+        }
     }
 
-    for (int i=2; i <= n; i+=2){
-        cout << i << "\n";
-    }
+    cout << "Even: " << even << "\n";
+    cout << "Odd: " << odd << "\n";
+    cout << "Positive: " << positive << "\n";
+    cout << "Negative: " << negative;
+
+
 
     return 0;
 }
