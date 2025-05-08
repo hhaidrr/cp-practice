@@ -3,18 +3,14 @@
 using namespace std;
 
 int main() {
-    // infinite loop
-    // get input
-    // compare equality
-    // print then terminate
-    int x = 0;
+    // input n
+    //  fixed loop of 12
+    // print n * i = (n * i)
+    int n = 0;
+    cin >> n;
 
-    while (cin >> x){
-        if (x == 1999){
-            cout << "Correct\n";
-            return 0;
-        }
-        cout << "Wrong\n";
+    for (int i = 1; i <= 12; i++){
+        cout << n << " * " << i << " = " << (n * i) << "\n";
     }
     return 0;
 }
