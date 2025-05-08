@@ -3,14 +3,21 @@
 using namespace std;
 
 int main() {
-    // input n
-    //  fixed loop of 12
-    // print n * i = (n * i)
-    int n = 0;
-    cin >> n;
+    // input x
+    // variable length loop (2 - x-1)
+    // check divisibilty, if true, circuit break, print NO
+    // loop end, print YES
+    int x = 0;
 
-    for (int i = 1; i <= 12; i++){
-        cout << n << " * " << i << " = " << (n * i) << "\n";
+    cin >> x;
+
+
+    for (int i = 2; i < x; i++){
+        if (x % i == 0){
+            cout << "NO";
+            return 0;
+        }
     }
+    cout << "YES";
     return 0;
 }
