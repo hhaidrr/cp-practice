@@ -3,14 +3,32 @@
 using namespace std;
 
 int main() {
-    int x = 0;
+    // fixed input T determines length of loop
+    // fixed loop of T collect input, 
+    // input n
+    // factorial logic, 
+    // another loop to calculate the factorial
+    // variable of running product p = 1
+    // i = 1, i <= n, i++
+    // p *= i
+    // inner loop end, print product
 
-    cin >> x;
+    int t = 0;
+    int n = 0;
+    ll p = 1;
 
-    for (int i = 1; i <= x; i++){
-        if (x % i == 0){
-            cout << i << "\n";
+    cin >> t;
+
+    while (cin >> n){
+        if (n == 0){
+            cout << 1 << "\n";
+            continue;
         }
+        for (ll i = 1; i <= n; i++) {
+            p *= i;
+        }
+        cout << p << "\n";
+        p = 1;
     }
     return 0;
 }
