@@ -1,5 +1,14 @@
 #!/bin/bash
 
-g++ -std=c++17 -o run ./cpp_basics.cpp
+if [ -z "$1" ]; then
+    echo "Usage: $0 <filename.cpp>"
+    exit 1
+fi
 
-./run
+BASENAME=$(basename "$1" .cpp)
+
+# Compile
+g++ -std=c++17 -o "$BASENAME.exe" "$1" 
+
+# Run
+./"$BASENAME.exe"
