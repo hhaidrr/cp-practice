@@ -1,5 +1,5 @@
-Welcome to my Competitive Programming repository!
-This is where I store my solutions to problems from various online judges and contests. I primarily use **C++** for problem-solving. Feel free to use this as a reference or study resource.
+Welcome to my Competitive Programming repository.
+This is where I store my solutions to problems from various online competitive program platforms that I have worked through. I primarily use **C++** for problem-solving. Feel free to use this as a reference or study resource.
 
 ## Structure
 
