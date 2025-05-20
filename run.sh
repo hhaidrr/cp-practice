@@ -7,8 +7,13 @@ fi
 
 BASENAME=$(basename "$1" .cpp)
 
+# create bin folder if it doesn't exist
+if [ ! -d "./bin" ]; then
+    mkdir "./bin"
+fi
+
 # Compile
-g++ -std=c++17 -o "$BASENAME.exe" "$1" 
+g++ -std=c++17 -o "./bin/$BASENAME.exe" "$1" 
 
 # Run
-./"$BASENAME.exe"
+./bin/"$BASENAME.exe"
